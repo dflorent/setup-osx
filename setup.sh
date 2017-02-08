@@ -16,6 +16,7 @@ brew install redis
 brew install python
 brew install python3
 brew install phantomjs
+brew install watchman
 brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv
