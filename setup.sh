@@ -21,6 +21,8 @@ brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
+brew install ndenv
+brew install node-build
 brew install tree
 brew install zsh
 brew install zsh-completions
@@ -56,14 +58,7 @@ pip install --upgrade pip
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s /bin/zsh
 
-# ndenv and node-build
-git clone https://github.com/riywo/ndenv ~/.ndenv
-echo 'export PATH="$HOME/.ndenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(ndenv init -)"' >> ~/.bash_profile
-exec $SHELL -l
-
-git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build
-
-ndenv install 6.9.5 # current LTS version
+# nodejs current LTS version
+ndenv install 6.9.5
 ndenv rehash
 
