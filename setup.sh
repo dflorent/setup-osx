@@ -56,7 +56,7 @@ pip install --upgrade pip
 
 # oh-my-zsh and zsh as a default shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s /bin/zsh
+chsh -s $(which zsh)
 
 # nodejs current LTS version
 ndenv install 6.9.5
