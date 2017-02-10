@@ -7,7 +7,7 @@ xcode-select --install
 brew update
 brew upgrade --all
 
-brew install ack
+brew install the_silver_searcher
 brew install git
 brew install git-flow-avh
 brew install vim --with-override-system-vi
