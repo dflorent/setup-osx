@@ -24,8 +24,7 @@ brew install pyenv-virtualenvwrapper
 brew install ndenv
 brew install node-build
 brew install tree
-brew install zsh
-brew install zsh-completions
+brew install fish
 brew install node
 
 # Homebrew Cask
@@ -54,9 +53,16 @@ brew cleanup
 # pip upgrade
 pip install --upgrade pip
 
-# oh-my-zsh and zsh as a default shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s $(which zsh)
+# fishshell as a default shell
+chsh -s $(which fish)
+
+# oh-my-fish
+curl -L http://get.oh-my.fish | fish
+omf install osx pyenv brew sublime
+
+# fisherman
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+fisher git_util pwd_info
 
 # nodejs current LTS version
 ndenv install 6.9.5
