@@ -1,11 +1,9 @@
 # mac os x updates and xcode command line tools
-sudo softwareupdate -iva
+sudo softwareupdate -ia
 xcode-select --install
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-brew upgrade --all
 
 brew install the_silver_searcher
 brew install git
@@ -13,58 +11,50 @@ brew install git-flow-avh
 brew install vim --with-override-system-vi
 brew install imagemagick
 brew install redis
+brew services start redis
 brew install python
 brew install python3
 brew install phantomjs
 brew install watchman
 brew install postgresql
+brew services start postgresql
 brew install pyenv
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
 brew install ndenv
-brew install node-build
 brew install tree
-brew install fish
+brew install zsh
 brew install node
 
 # Homebrew Cask
 brew tap caskroom/cask
 
 # Apps
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" docker
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" hipchat
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" imageoptim
-brew cask install --appdir="/Applications" postico
-brew cask install --appdir="/Applications" sequel-pro
-brew cask install --appdir="/Applications" sourcetree
+brew cask install alfred
+brew cask install iterm2
+brew cask install sublime-text
+brew cask install virtualbox
+brew cask install docker
+brew cask install vagrant
+brew cask install google-chrome
+brew cask install firefox
+brew cask install skype
+brew cask install hipchat
+brew cask install dropbox
+brew cask install 1password
+brew cask install imageoptim
+brew cask install postico
+brew cask install sequel-pro
+brew cask install sourcetree
 
 brew cleanup
 
 # pip upgrade
 pip install --upgrade pip
 
-# fishshell as a default shell
-chsh -s $(which fish)
+# zsh as a default shell
+chsh -s /bin/zsh
 
-# oh-my-fish
-curl -L http://get.oh-my.fish | fish
-omf install osx pyenv brew sublime
-
-# fisherman
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-fisher git_util pwd_info
-
-# nodejs current LTS version
-ndenv install 6.9.5
-ndenv rehash
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
