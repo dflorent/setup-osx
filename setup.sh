@@ -22,6 +22,7 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
 brew install ndenv
+git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build
 brew install tree
 brew install zsh
 brew install node
