@@ -10,6 +10,7 @@ brew install git
 brew install git-flow-avh
 brew install vim --with-override-system-vi
 brew install imagemagick
+brew install libmagic
 brew install redis
 brew services start redis
 brew install python
@@ -18,6 +19,8 @@ brew install phantomjs
 brew install watchman
 brew install postgresql
 brew services start postgresql
+brew install mysql
+brew services start mysql
 brew install pyenv
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
