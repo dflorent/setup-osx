@@ -30,6 +30,7 @@ git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-bui
 brew install tree
 brew install zsh
 brew install node
+brew install yarn
 
 # Homebrew Cask
 brew tap caskroom/cask
