@@ -36,22 +36,25 @@ brew install yarn
 brew tap caskroom/cask
 
 # Apps
-brew cask install alfred
-brew cask install iterm2
-brew cask install sublime-text
-brew cask install virtualbox
-brew cask install docker
-brew cask install vagrant
-brew cask install google-chrome
-brew cask install firefox
-brew cask install skype
-brew cask install hipchat
-brew cask install dropbox
 brew cask install 1password
+brew cask install alfred
+brew cask install docker
+brew cask install dropbox
+brew cask install firefox
+brew cask install flux
+brew cask install google-chrome
+brew cask install hipchat
 brew cask install imageoptim
+brew cask install iterm2
+brew cask install libreoffice
+brew cask install libreoffice-language-pack
 brew cask install postico
 brew cask install sequel-pro
+brew cask install skype
 brew cask install sourcetree
+brew cask install sublime-text
+brew cask install vagrant
+brew cask install virtualbox
 
 brew cleanup
 
