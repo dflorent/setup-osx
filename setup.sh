@@ -53,6 +53,7 @@ brew cask install sequel-pro
 brew cask install skype
 brew cask install sourcetree
 brew cask install sublime-text
+brew cask install the-unarchiver
 brew cask install vagrant
 brew cask install virtualbox
 
