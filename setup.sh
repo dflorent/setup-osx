@@ -11,6 +11,7 @@ brew install git
 brew install git-flow-avh
 brew install vim --with-override-system-vi
 brew install imagemagick
+brew install gettext
 brew install libmagic
 brew install redis
 brew services start redis
